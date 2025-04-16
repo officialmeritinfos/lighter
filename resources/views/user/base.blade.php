@@ -303,12 +303,12 @@
                                 </a>
                                 <ul class="menu-sub">
 
-{{--                                    <li class="menu-item">--}}
-{{--                                        <a href="{{route('setting.kyc')}}" class="menu-link">--}}
-{{--                                            <i class="menu-icon tf-icons ti ti-user-plus"></i>--}}
-{{--                                            <div data-i18n="KYC">KYC</div>--}}
-{{--                                        </a>--}}
-{{--                                    </li>--}}
+                                    <li class="menu-item">
+                                        <a href="{{route('setting.kyc')}}" class="menu-link">
+                                            <i class="menu-icon tf-icons ti ti-user-plus"></i>
+                                            <div data-i18n="KYC">KYC</div>
+                                        </a>
+                                    </li>
 
                                     <li class="menu-item">
                                         <a href="{{url('account/settings')}}" class="menu-link">
