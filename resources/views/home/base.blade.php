@@ -153,7 +153,7 @@
                 <div class="main-menu-three__wrapper-inner">
                     <div class="main-menu-three__left">
                         <div class="main-menu-three__logo">
-                            <a href="{{ url('/') }}"><img src="{{ asset('home/images/'.$web->logo) }}" alt=""></a>
+                            <a href="{{ url('/') }}"><img src="{{ asset('home/images/'.$web->logo) }}" alt="" style="width: 100px;"></a>
                         </div>
                         <div class="main-menu-three__main-menu-box">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
