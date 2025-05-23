@@ -1834,7 +1834,7 @@ ul {
   justify-content: center;
   height: 30px;
   width: 30px;
-  background-color: #f8b78c;
+  background-color: #f42647;
   border-radius: 50%;
   font-size: 15px;
   color: var(--corle-black);
@@ -7224,7 +7224,7 @@ ul {
   bottom: -110px;
   max-width: 297px;
   width: 100%;
-  background-color: #f8b78c;
+  background-color: #f42647;
   padding: 27px 35px 36px;
   z-index: 1;
 }
@@ -8039,7 +8039,7 @@ ul {
 # CTA Three
 --------------------------------------------------------------*/
 .cta-two--three {
-  background-color: #f8b78c;
+  background-color: #f42647;
 }
 
 .cta-two--three .cta-two__title {
@@ -8050,7 +8050,7 @@ ul {
 # CTA Four
 --------------------------------------------------------------*/
 .cta-four .cta-three__inner {
-  background-color: #f8b78c;
+  background-color: #f42647;
 }
 
 .cta-four .cta-three__title {
@@ -8065,7 +8065,7 @@ ul {
 }
 
 .contact-three .contact-one__wrap {
-  background-color: #f8b78c;
+  background-color: #f42647;
 }
 
 /*--------------------------------------------------------------
