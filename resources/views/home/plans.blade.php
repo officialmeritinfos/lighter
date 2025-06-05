@@ -1,96 +1,75 @@
 @extends('home.base')
 @section('content')
-    <!--Page Header Start-->
-    <section class="page-header">
-        <div class="page-header-bg" style="background-image: url({{asset('home/images/backgrounds/main-slider-2-1.jpg')}})">
-        </div>
-        <div class="page-header-bg-2" style="background-image: url({{asset('home/images/backgrounds/main-slider-2-1.jpg')}})">
-        </div>
+
+    <!-- ================
+        Breadcrumb Common
+    ===================== -->
+    <section class="breadcrubm">
         <div class="container">
-            <div class="page-header__inner">
-                <h2>{{$pageName}}</h2>
-                <ul class="thm-breadcrumb list-unstyled">
-                    <li><a href="{{url('/')}}">Home</a></li>
-                    <li><a href="#">{{$pageName}}</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrubm-wrapper">
+                        <img class="anim-services-01" src="{{asset('home/images/home/doddles02.png')}}" alt="">
+                        <img class="anim-services-02" src="{{asset('home/images/home/hero-v3-04.png')}}" alt="">
+                        <h5>{{$pageName}}</h5>
+                        <h3>We are the market <br> leader</h3>
+                        <h1 class="breadcrubm-big">{{$pageName}}</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!--Page Header End-->
 
 
-    <!--Pricing One Start-->
-    <section class="pricing-one pricing-page">
+    <section class="container-fluid pricingTable pt-90">
         <div class="container">
-            <div class="section-title text-center">
-                <span class="section-title__tagline section-title__tagline--two">Our Investment Plan</span>
-            </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center monthlyPriceList animated">
+                <div class="col-lg-12">
+                    <div class="customer-heading">
+                        <h2>Investment Plans</h2>
+                    </div>
+                </div>
                 @foreach($packages as $package)
                     @inject('option','App\Defaults\Custom')
-                    <!--Pricing One Single Start-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="pricing-one__single">
-                            <div class="pricing-one__price-box">
-                                <div class="pricing-one__shape-1">
-                                    <img src="{{asset('home/images/shapes/pricing-one-shape-1.png')}}" alt="">
-                                </div>
-                                <h2 class="pricing-one__price">{{$package->roi}}% <span> {{$option->getReturnType($package->returnType)}}</span></h2>
+                    <div class="col-md-4 mt-3">
+                        <div class="inner holder">
+                            <div class="hdng">
+                                <p>{{$package->name}}</p>
                             </div>
-                            <div class="pricing-one__content">
-                                <p class="pricing-one__pack-name">{{$package->name}}</p>
-                                <p class="pricing-one__text">Chooses to enjoy a no annoying.</p>
-                                <ul class="list-unstyled pricing-one__content-list">
-                                    <li>
-                                        <div class="icon">
-                                            <i class="icon-check-2"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p>
-                                                Price: ${{number_format($package->minAmount,2)}} - @if($package->isUnlimited !=1)
-                                                    ${{number_format($package->maxAmount,2)}}
-                                                @else
-                                                    Unlimited
-                                                @endif
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="icon-check-2"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p>Total Profit return: {{$package->numberOfReturns*$package->roi}}%</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="icon-check-2"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p>Contract Duration: {{$package->Duration}}</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="icon-check-2"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p>Referral Bonus: {{$package->referral}}%</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <a href="{{route('register')}}" class="thm-btn pricing-one__btn">Get Started</a>
+                            <div class="price mt-5">
+                                <p><b>{{$package->roi}}%</b><span> / {{$option->getReturnType($package->returnType)}}</span></p>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    Min. Deposit: ${{number_format($package->minAmount,2)}}
+                                </p>
+                                <p>
+                                    Max. Deposit: @if($package->isUnlimited !=1)
+                                        ${{number_format($package->maxAmount,2)}}
+                                    @else
+                                        Unlimited
+                                    @endif
+                                </p>
+                                <p>
+                                    {{$option->getReturnType($package->returnType)}} Profit: {{$package->roi}}%
+                                </p>
+                                <p>
+                                    Duration: {{$package->Duration}}
+                                </p>
+                                <p>
+                                    Referral Bonus: {{$package->referral}}%
+                                </p>
+                            </div>
+                            <div class="btn">
+                                <a href="{{route('register')}}" class="readon">Get Started</a>
                             </div>
                         </div>
                     </div>
-                    <!--Pricing One Single End-->
                 @endforeach
 
             </div>
+
         </div>
     </section>
-    <!--Pricing One End-->
-
 
 @endsection

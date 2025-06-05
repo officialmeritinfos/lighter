@@ -1,22 +1,24 @@
 @extends('home.base')
 @section('content')
-    <!--Page Header Start-->
-    <section class="page-header">
-        <div class="page-header-bg" style="background-image: url({{asset('home/images/backgrounds/main-slider-2-1.jpg')}})">
-        </div>
-        <div class="page-header-bg-2" style="background-image: url({{asset('home/images/backgrounds/main-slider-2-1.jpg')}})">
-        </div>
+
+    <!-- ================
+        Breadcrumb Common
+    ===================== -->
+    <section class="breadcrubm">
         <div class="container">
-            <div class="page-header__inner">
-                <h2>{{$pageName}}</h2>
-                <ul class="thm-breadcrumb list-unstyled">
-                    <li><a href="{{url('/')}}">Home</a></li>
-                    <li><a href="#">{{$pageName}}</a></li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrubm-wrapper">
+                        <img class="anim-services-01" src="{{asset('home/images/home/doddles02.png')}}" alt="">
+                        <img class="anim-services-02" src="{{asset('home/images/home/hero-v3-04.png')}}" alt="">
+                        <h5>{{$pageName}}</h5>
+                        <h3>We are the market <br> leader</h3>
+                        <h1 class="breadcrubm-big">{{$pageName}}</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!--Page Header End-->
 
 
     <!--About One Start-->
