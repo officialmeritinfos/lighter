@@ -65,7 +65,9 @@
                             <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
                                  data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p>Registration process is very easy and will take a few moments to complete Simply click CREATE ACCOUNT button  and fill in all the required fields</p>
+                                    <p>
+                                        Registration process is very easy and will take a few moments to complete Simply
+                                        click CREATE ACCOUNT button  and fill in all the required fields</p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +103,7 @@
                                             </li>
                                             <li>
                                                 Once your deposit has been confirmed, the status of the investment will change
-                                                to <span class="text-primary">Ongoing</span> which means that it has been confirmed
+                                                to Ongoing which means that it has been confirmed
                                                 and your investment started.
                                             </li>
                                         </ul>
@@ -201,7 +203,7 @@
                             <div id="collapse-2-8" class="collapse" aria-labelledby="heading-2-8"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Yes we are officially and properly registered with the united kingdom company house our company registration number is 138898   and registered with the name {{$siteName}} LTD</p>
+                                    <p>Yes we are officially and properly registered with the United States with the name {{$siteName}} LTD</p>
                                 </div>
                             </div>
                         </div>

@@ -108,7 +108,7 @@
                         <h2>Our skilled team <br class="d-lg-block d-md-none">
                             grow your finance</h2>
                         <p>
-                            {$siteName}} stands as one of the largest and most seasoned international private equity firms.
+                            {{$siteName}} stands as one of the largest and most seasoned international private equity firms.
                             Our accomplished team of investment professionals is primarily dedicated to strategic investments.
                         </p>
                         <ul>
@@ -267,8 +267,8 @@
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="container-fluid pricingTable pt-90">
         <div class="container">
             <div class="row justify-content-center monthlyPriceList animated">
@@ -485,7 +485,7 @@
     </section>
 
 
-    
+
 
 
     <!-- =====================

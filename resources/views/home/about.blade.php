@@ -81,7 +81,7 @@
                 </div>
                 <div class="col-lg-12 col-md-12">
                     <div class="about-img-v2">
-                            <img src="{{asset('home/images/massivechain.jpeg')}}" alt="">
+                            <img src="{{asset('home/images/')}}" alt="">
                             <img class="rounde-bubble" src="{{asset('home/images/home/round-bubble.png')}}" alt="">
                         </div>
                 </div>
